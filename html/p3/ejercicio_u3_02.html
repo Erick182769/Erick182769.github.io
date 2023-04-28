@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>.Tit{background-color: black;color: slateblue;}</style>
+    </head>
+    <body>
+        <h1 class="Tit">JavaScript - Var & Alert</h1>
+        <script>
+            let x = 180, y = 50;
+            alert("El valor de x(Main): " +x);
+            alert("El valor de y(Main): " +y);
+
+            function testfunction() {
+            let x=1, y=5;
+            alert("El valor de x(Main): " +x);
+            alert("El valor de y(Main): " +y);
+            }
+            testfunction();
+
+            alert(".....se procede a continuar con la carga de la pagina");
+        </script>
+        <script>
+            /* 2.1.1.19 Variables - Tareas*/
+            let rosa_precio = 8;
+            let lirio_precio = 10;
+            let tulipan_precio = 2;
+
+            let numero_rosas = 70;
+            let numero_lirio = 50;
+            let numero_tulipan = 120;
+            let valor_rosas;
+            let valor_lirio;
+            let valor_tulipan;
+            let total;
+            
+            function calcular(){
+            valor_rosas=rosa_precio*numero_rosas;
+            valor_lirio=lirio_precio*numero_lirio;
+            valor_tulipan=tulipan_precio*numero_tulipan
+            total = rosa_precio + lirio_precio + tulipan_precio;}
+
+            function imprimir(){
+            alert("Rosa\n precio unitario:$"+ rosa_precio + "\n cantidad:$"+ numero_rosas + "\n valor:$" + valor_rosas);
+            alert("Lirio:\n precio unitario:$" + lirio_precio + "\n cantidad:$" + numero_lirio + "\n valor:$"+ valor_lirio);
+            alert("Tulipán:\n precio unitario:$" + tulipan_precio + "\n cantidad:$" + numero_tulipan + "\ valor:$" + valor_tulipan);
+            alert("Total: "+ total);}
+
+            calcular();
+            imprimir();
+           // alert("Rosa >> Precio $8, Cantidad 70");
+        </script>
+        <script>
+            /*2.1.1.20 LABORATORIO: Variables */
+
+            let nombre,telefono,correo;
+
+            function imprimeDatos(strNombre, strTelefono, strCorreo){
+                alert("Nombre: " + strNombre + "\nTelefono: " + strTelefono + "\nCorreo: " + strCorreo +
+                "\nCadena formateada [" + strNombre + "/" + strTelefono + "/" + strCorreo + "]");
+
+            }
+
+            nombre="Maxwell Wright";
+            telefono="(0191) 719 6495";
+            correo="Curabitur.egestas.nunc@nonummyac.co.uk";
+            imprimeDatos(nombre, telefono, correo);
+
+            nombre="Raja Villarreal";
+            telefono="0866 398 2895";
+            correo="posuere.vulputate@sed.com";
+            imprimeDatos(nombre, telefono, correo);
+
+            nombre="Helen Richards";
+            telefono="0800 1111";
+            correo="libero@convallis.edu";
+            imprimeDatos(nombre, telefono, correo);
+
+
+        </script>
+    </body>
+</html>
