@@ -1,0 +1,1 @@
+console.log("Hola Nigga desde un archivo externo de JS");
