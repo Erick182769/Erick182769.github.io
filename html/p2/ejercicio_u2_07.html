@@ -12,99 +12,93 @@
         <meta name="author" content="Erick Alexis Villarreal López">
         <meta name="revised" content="">
         <meta name="description" content="">
-        <style>
-            p{background-color: black; color: lightgreen}
-            .posX:hover{transform:translateX(25px);}
-            .posY:hover{transform:translateY(25px);}
-            .posXY:hover{transform:translate(25px,25px);}
-            .rotX:hover{transform:RotateX(45deg);}
-            .rotY:hover{transform:RotateY(45deg);}
-            .rotZ:hover{transform:RotateZ(45deg);}
-            .sizeX:hover{transform:scaleX(1.5);}
-            .sizeY:hover{transform:scaleY(1.5);}
-            .sizeXY:hover{transform:scale(0.75, 0.75);}
-            .skewX:hover{transform:skewX(30deg);}
-            .skewY:hover{transform:skewY(30deg);}
-            .mul:hover{transform:matrix(1, 0, 0, 2, 50, 0);}
-            /*.efecto {transition: width 2s, height 2s;}
-            .efecto:hover{transform:matrix(1, 0, 0, 2, 50, 0);}*/
-            .matrix_2:hover{ transform: matrix(2,1,1,2,200,1);}
-            .efecto{height: 75%;font-size: 75%; }
+       <style>
+            p{ color: limegreen; background-color: black;}
+            .moverX:hover{ transform: translateX(10px);}
+            .moverY:hover{ transform: translateY(10px);}
+            .moverXY:hover{ transform: translate(20px,5PX);}
+            .rotaX:hover{ transform: rotateX(180deg);}
+            .rotaY:hover{ transform: rotateY(180deg);}
+            .rotaXY:hover{ transform: rotate(10deg);}
+            .escalarX:hover{ transform: scaleX(1.5);}
+            .escalarY:hover{ transform: scaleY(1.5);}
+            .escalarXY:hover{ transform: scale(1.5,1.5);}
+            .barridoX:hover{ transform: skewX(30deg);}
+            .barridoY:hover{ transform: skewY(10deg);}
+            .matrix_X:hover{ transform: scaleY(1.5);transform: translate(10px);}
+            .efecto{height: 75%; font-size: 75%; transition: height 0.5s, font-size 0.5s;}
             .efecto:hover{height: 125%; font-size: 125%;}
-
-            .rainbow{width: 100px; height: 100px; background-color: red; animation-name: rgb;
-                animation-duration: 10s;
-                animation-iteration-count: infinite;
-                animation-timing-function:  ease-in;
-            }
-            @keyframes rgb{
-                /*for{ background-color: red;} to{ background-color: blue;}}*/
-                0%{background-color: red;}
-                17%{background-color: yellow; }
-                33%{background-color: green;}
-                50%{background-color: Cyan; }
-                67%{background-color: blue; }
-                82%{background-color: magenta; }
-                97%{background-color:red; }
-            }
-
+            .rainbow{ height: 100px; width: 100px;
+                animation-name: rgb; animation-duration: 2.5s;
+                animation-timing-function: linear;    
+                animation-iteration-count: infinite;}
+            .arcoiris{ height: 100px; width: 100px;
+                animation-name: rgb; animation-duration: 2.5s;
+                animation-iteration-count: infinite;}
+        
+            @keyframes  rgb{
+                0%{ background-color: green;}
+                16%{background-color: yellow;}
+                33%{background-color: orange;}
+                50%{background-color: red;}
+                67%{background-color: purple;}
+                82%{background-color: blue;}
+                100%{ background-color: green;}
+            } 
+            .barraProgreso{ height: 25px; width: 1000px; background-color: gray;
+            color: black; font-size: 125%; font-weight: bold; text-align: center;
+        text-transform: uppercase; animation-timing-function: linear; animation-direction: reverse;
+    animation-name: progreso; animation-duration: 10s; animation-delay: 5s;}
+    @keyframes progreso{
+        0%{ background-color:white;width: 0px;}
+        13%{ background-color:red;width: 333px;}
+        66%{ background-color:gold;width: 666px;}
+        100%{ background-color: darkgreen; width: 999px;}
+    }  
         </style>
     </head>
-    <body >
-        <hgroup>
-            <h1>Efectos con CSS</h1>
-            <H2>Translate</H2>
-            <p>UPSLP (Sin efecto)</p>
-            <p class="posX">UPSLP (Translate X)</p>
-            <p class="posY">UPSLP (Translate Y)</p>
-            <p class="posXY">UPSLP (Translate X, Y)</p>
+    <body>
+        <hgroup>|
+            <h1>efectos css</h1>
+            <h2>translate</h2>
+            <p>upslp (sin efecto)</p>
+            <p class="moverX"> upslp (mover en x)</p>
+            <p class="moverY"> upslp (mover en y)</p>
+            <p class="moverXY"> upslp (mover en x,y)</p>
         </hgroup>
         <hgroup>
-            <h2>Rotate</h2>
-            <p class="rotX">UPSLP (Rotate X)</p>
-            <p class="rotY">UPSLP (Rotate Y)</p>
-            <p class="rotZ">UPSLP (Rotate Z)</p>
+            <h2>rotar</h2>
+            <p class="rotaX"> upslp (rotar en x)</p>
+            <p class="rotaY"> upslp (rotar en y)</p>
+            <p class="rotarXY"> upslp (rotar en x,y)</p>
         </hgroup>
         <hgroup>
-            <h2>Scale</h2>
-            <p class="sizeX">UPSLP (Scale X)</p>
-            <p class="sizeY">UPSLP (Scale Y)</p>
-            <p class="sizeXY">UPSLP (Scale X, Y)</p>
+            <h2>escalar</h2>
+            <p class="escalarX"> upslp (escalar en x)</p>
+            <p class="escalarY"> upslp (escalar en y)</p>
+            <p class="escalarXY"> upslp (escalar en x,y)</p>
         </hgroup>
         <hgroup>
-            <h2>Skew</h2>
-            <p class="skewX">UPSLP (Skew X)</p>
-            <p class="skewY">UPSLP (Skew Y)</p>
+            <h2>skew</h2>
+            <p class="barridoX"> upslp (escalar en x)</p>
+            <p class="barridoY"> upslp (escalar en y)</p>
         </hgroup>
         <hgroup>
-            <h2>Multiple</h2>
-            <p class="mul">UPSLP (Mover y Escalar)</p>
-            <p class="efecto">UPSLP (Mover y Escalar)</p>
+            <h2>matrix</h2>
+            <p class="matrix_X"> upslp (escalar en x)</p>
+            <p class="barridoY"> upslp (escalar en y)</p>
         </hgroup>
-
         <hgroup>
-            <h2>Transition</h2>
-            <div class="matrix_2"><a href="#">matrix</a></div>
-            <div class="matrix_2"><a href="#"> matrix</a></div>
-            <div class="matrix_2"><a href="#"> matrix </a></div>
+            <h2> transition</h2>
+            <div class="efecto"><a href="#">MENU 1</a></di>
+            <div class="efecto"><a href="#">MENU 2</a></di>
+             <div class="efecto"><a href="#">MENU 3</a></di>    
         </hgroup>
-
-
         <hgroup>
-            <h2>Transition</h2>
-            <div class="efecto"><a href="#"> menu 1</a></div>
-            <div class="efecto"><a href="#"> menu 2</a></div>
-            <div class="efecto"><a href="#"> menu 3</a></div>
-            <div class="efecto"><a href="#"> menu 4</a></div>
-            <div class="efecto"><a href="#"> menu 5</a></div>
-
+        <h2>animation</h2>
+        <div class="rainbow" style="color: white ; font-weight: bold;">suavizado</div>
+        <div class="arcoiris" style="color: white ; font-weight: bold;">normal</div>
+        <div class="barraProgreso" >TIEMPO RESTANTE</div>
         </hgroup>
-
-        <hgroup>
-            <h1>rainbow</h1>
-            <div class="rainbow"> <p>arcoiris</p></div>
-        </hgroup>
-
-
     </body>
 </html>
