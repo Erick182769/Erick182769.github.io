@@ -1,0 +1,21 @@
+div{
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+}
+table {
+    width: 100%;
+}
+
+button {
+    width: 100%;
+    font-size: 150%;
+}
+
+.ac {
+    color: rgb(255, 255, 255);   
+}
+
+button  {
+ background-color: rgba(23, 126, 20, 0.692);
+
+}
