@@ -29,7 +29,7 @@ ul {
     align-items: center;
     justify-content: center;
     height: 63px;
-    background: #2a2420;
+    background: #4B0082;
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -38,14 +38,14 @@ ul {
 .navbar a {
     display: block;
     padding: 20px 20px;
-    color: #18171c;
+    color: #F0FFFF;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 20px;
 }
 
 .navbar a:hover {
-    background: #362d27;
+    background: #4B0082;
 }
 
 .title {
@@ -63,10 +63,10 @@ p {
     display: inline-block;
     margin-top: 15px;
     padding: 0px 40px;
-    border: 0px solid #6495ED;
+    border: 0px solid #4B0082;
     color: #F0FFFF;
     text-decoration: none;
-    background: #6495ED;
+    background: #4B0082;
 }
 
 .content {
@@ -78,13 +78,13 @@ p {
 }
 
 .clase {
-    background: #6495ED;
+    background: #4B0082;
     color: #F0FFFF;
 }
 
 .Acerca de la materia {
     padding-bottom: 50px;
-    background: #6495ED;
+    background: #4B0082;
     color: #F0FFFF;
 }
 
@@ -101,7 +101,7 @@ p {
 
 .Practicas {
     padding-top: 30px;
-    background:  #6495ED;
+    background:  #4B0082;
     color: #F0FFFF;
     padding-bottom: 0;
 }
@@ -128,7 +128,7 @@ p {
     left: 0;
     top: 0;
     z-index: 0;
-    background:  #6495ED;
+    background:  #4B0082;
     border-radius: 50%;
     width: 100px;
     height: 100px;
