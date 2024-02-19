@@ -38,7 +38,7 @@ ul {
 .navbar a {
     display: block;
     padding: 20px 20px;
-    color: #fff;
+    color: #18171c;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 20px;
@@ -63,10 +63,10 @@ p {
     display: inline-block;
     margin-top: 15px;
     padding: 0px 40px;
-    border: 0px solid #ff9000;
-    color: #fff;
+    border: 0px solid #6495ED;
+    color: #F0FFFF;
     text-decoration: none;
-    background: #ff9000;
+    background: #6495ED;
 }
 
 .content {
@@ -78,18 +78,18 @@ p {
 }
 
 .clase {
-    background: #362d27;
-    color: #fff;
+    background: #6495ED;
+    color: #F0FFFF;
 }
 
 .Acerca de la materia {
     padding-bottom: 50px;
-    background: #2a2420;
-    color: #fff;
+    background: #6495ED;
+    color: #F0FFFF;
 }
 
 .Temas {
-    color: #fff;
+    color: #F0FFFF;
     text-align: center;
     background-size: cover;
 }
@@ -101,8 +101,8 @@ p {
 
 .Practicas {
     padding-top: 30px;
-    background: #096fdd;
-    color: #fff;
+    background:  #6495ED;
+    color: #F0FFFF;
     padding-bottom: 0;
 }
 
@@ -128,7 +128,7 @@ p {
     left: 0;
     top: 0;
     z-index: 0;
-    background: #0bc0a8;
+    background:  #6495ED;
     border-radius: 50%;
     width: 100px;
     height: 100px;
